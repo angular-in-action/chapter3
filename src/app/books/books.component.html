@@ -1,3 +1,15 @@
-<p>
-  books works!
-</p>
+<h2>Catalog</h2>
+<table class="table">
+  <tr>
+    <th>Title</th>
+    <th>Author(s)</th>
+    <th>Date</th>
+    <th>Price</th>
+  </tr>
+  <tr *ngFor="let book of books">
+    <td><a href="{{book.url}}">{{book.title}}</a></td>
+    <td>{{book.authors.join(', ')}}</td>
+    <td>{{book.date}}</td>
+    <td>{{book.price | currency:'USD':true}}</td>
+  </tr>
+</table>

@@ -1,1 +1,14 @@
-<app-books></app-books>
+<div class="container">
+  <div class="col-sm-4">
+    <app-usage [metric]="metrics.memory" [title]="'Memory'"></app-usage>
+  </div>
+  <div class="col-sm-4">
+    <app-usage [metric]="metrics.cpu" [title]="'CPU'"></app-usage>
+  </div>
+  <div class="col-sm-4">
+    <app-usage [metric]="metrics.disk" [title]="'Disk'"></app-usage>
+  </div>
+  <div class="col-sm-12">
+    <app-nodes [nodes]="nodes"></app-nodes>
+  </div>
+</div>

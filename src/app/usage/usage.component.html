@@ -1,0 +1,8 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{title}}</h3>
+  </div>
+  <div class="panel-body">
+    <span class="percent">{{metric.available/metric.used/100 | percent:'1.0-2'}}</span> ({{metric.used}}/{{metric.available}})
+  </div>
+</div>

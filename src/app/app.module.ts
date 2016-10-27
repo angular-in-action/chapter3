@@ -5,11 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BooksComponent } from './books/books.component';
+import { UsageComponent } from './usage/usage.component';
+import { NodesComponent } from './nodes/nodes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BooksComponent
+    BooksComponent,
+    UsageComponent,
+    NodesComponent
   ],
   imports: [
     BrowserModule,

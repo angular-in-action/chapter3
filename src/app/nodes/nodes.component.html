@@ -1,0 +1,19 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Nodes</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Status</th>
+      </tr>
+      <tr *ngFor="let node of nodes">
+        <td>{{node.name}}</td>
+        <td>{{node.age}}</td>
+        <td>{{node.status}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
